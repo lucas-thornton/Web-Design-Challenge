@@ -4,34 +4,31 @@
 <head>
   <meta charset="UTF-8">
   <title>Web Visualisations</title>
-  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Latitude</a>
+    <a class="navbar-brand" href="index.html">Latitude</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+        <li class="nav-item">
+          <a class="nav-link" href="comparisons.html">Comparison</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Comparison</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Data</a>
+          <a class="nav-link" href="data.html">Data</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Plots
           </a>
-          <div 
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown"></div> 
             <a class=Cloudiness href="#"></a>
-            <a class="Max Temp" href="#"></a>
+            <a class="Max Temp" href="max_temp.html"></a>
             <a class="Humidity" href="#"></a>
             <a class="Wind Speed" href="#"></a>
           </div>
@@ -39,11 +36,55 @@
       </ul>
     </div>
   </nav>
-  <section>
-    <h1>Summary Latitude vs. X</h1>
-    <p>
-      The purpose of this project is to analyse how various weather statistics are effected by changes to the latitude.
-    </p>
+  <section class=main>
+    <div class = "row">
+      <div class = "col-md-7">
+        <div class="box main">
+          <h1><strong>Summary: Latitude vs. X</strong></h1>
+          <br>
+          <hr>
+          <p>
+            The purpose of this project is to analyse how various weather statistics are effected by changes to the latitude.
+          </p>
+        </div>
+       
+       <br>
+      </div>
+      <div class = "col-md-5">
+        <div class="box main">
+          <h1><strong>Visualisations</strong></h1>
+          <br>
+          <hr>
+          <table>
+            <tr>
+              <td>
+                <a href="max_temp.html"><img src="Resources/assets/images/Fig1.png" width=150 height=150 > </a>
+              </td>
+              <td>
+                <img src="Resources/assets/images/Fig3.png" width=150 height=150> 
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="Resources/assets/images/Fig2.png" width=150 height=150> 
+              </td>
+              <td>
+                <img src="Resources/assets/images/Fig4.png" width=150 height=150> 
+              </td>
+            </tr>
+            <!-- <img src="Resources/assets/images/Fig1.png" width=150 height=150>  
+            <img src="Resources/assets/images/Fig3.png" width=150 height=150>  -->
+          </div>
+          <!-- <div class = col-md-2>
+            <img src="Resources/assets/images/Fig2.png" width=150 height=150>  
+            <img src="Resources/assets/images/Fig4.png" width=150 height=150> 
+          </div> -->
+          
+        </div>
+      </div>
+    </div>
+    
+    
   </section>
 
   
