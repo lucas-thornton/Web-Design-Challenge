@@ -101,6 +101,15 @@ h5 {
 
 }
 
+.box sub {
+  min-height: 50px;
+  padding: 0px 15px;
+  margin: 15px;
+  font-weight: 800;
+  color: #fff;
+
+}
+
 .primary {
   border: 2px solid #f00;
   margin: -2px;
@@ -117,7 +126,18 @@ h5 {
 
 }
 
-@media(max-width:600px) {
+.comparisons {
+  visibility: visible;
+}
+
+.comparisons_min {
+  display: none;
+
+}
+
+
+
+@media(max-width:650px) {
 
 .navbar li {
   display: inline-block;
@@ -143,4 +163,25 @@ visibility: hidden;
   visibility: visible;  
   padding: 20px;
 }
+
+
+.comparisons {
+  display: none;
+
+}
+
+.comparisons_min {
+  display: block;
+
+}
+
+.box sub {
+  min-height: 50px;
+  padding: 0px 15px;
+  margin: 15px;
+  font-weight: 800;
+  color: #fff;
+  display: none;
+}
+
 }
