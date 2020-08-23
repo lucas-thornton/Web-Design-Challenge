@@ -3,49 +3,96 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Web Visualisations</title>
-  <link rel="stylesheet" href="reset.css">
+  <title>Max Temperature</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
-  <link rel='stylesheet' href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="index.html">Latitude</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="comparisons.html">Comparison</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="data.html">Data</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plots
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown"></div> 
+            <a class=Cloudiness href="cloudiness.html"></a>
+            <a class="Max Temp" href="max_temp.html"></a>
+            <a class="Humidity" href="humidity.html"></a>
+            <a class="Wind Speed" href="wind_speed.html"></a>
           </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
     </div>
   </nav>
+  <section class=main>
+    <div class = "row">
+      <div class = "col-md-7">
+        <div class="box main">
+          <h1><strong>Latitude vs. Max Temperature</strong></h1>
+          <br>
+          <hr>
+          <img src="Resources/assets/images/Fig1.png" width=750 height =500>
+          <p>
+            This graph looks at the effect that a changing latitude has on the max temperature of the cities looked at in the data.
+            As you can see the plot shows that the max temperature tends to increase the closer you get to the equator (a latitude of 0).
+          </p>
+          
 
+        </div>
+       
+       <br>
+      </div>
+      <div class = "row">
+        <div class = "col-md-3">
+        </div>
+      <div class = "col-md-4">
+        <div class="box main">
+          <h1><strong>Visualisations</strong></h1>
+          <br>
+          <hr>
+          <table> 
+            <tr>
+              <td class = primary>
+                <a href="max_temp.html"><img src="Resources/assets/images/Fig1.png" width=150 height=150 > </a>
+              </td>
+              <td>
+                <a href="cloudiness.html"><img src="Resources/assets/images/Fig3.png" width=150 height=150 > </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="humidity.html"><img src="Resources/assets/images/Fig2.png" width=150 height=150 > </a>
+              </td>
+              <td>
+                <a href="wind_speed.html"><img src="Resources/assets/images/Fig4.png" width=150 height=150 > </a>
+              </td>
+            </tr>
+            <!-- <img src="Resources/assets/images/Fig1.png" width=150 height=150>  
+            <img src="Resources/assets/images/Fig3.png" width=150 height=150>  -->
+          </div>
+          <!-- <div class = col-md-2>
+            <img src="Resources/assets/images/Fig2.png" width=150 height=150>  
+            <img src="Resources/assets/images/Fig4.png" width=150 height=150> 
+          </div> -->
+          
+        </div>
+      </div>
+    </div>
+    
+    
+  </section>
 
   
 </body>

@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Web Visualisations</title>
+  <title>Humidity</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -23,7 +23,7 @@
           <a class="nav-link" href="data.html">Data</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Plots
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown"></div> 
@@ -40,39 +40,42 @@
     <div class = "row">
       <div class = "col-md-7">
         <div class="box main">
-          <h1><strong>Summary: Latitude vs. X</strong></h1>
+          <h1><strong>Latitude vs. Humidity</strong></h1>
           <br>
           <hr>
-          <img class="textwrap" src="Resources/assets/images/Fig1.png" width=200 height =200>
+          <img src="Resources/assets/images/Fig2.png" width=750 height =500>
           <p>
-            The purpose of this project is to analyse how various weather statistics are effected by changes to the latitude. To this we used APIs to extract weather data from capital cities across the world and plotted them against their respective latitude values. 
+            This plot shows how the humidity of cities changes based on their latitude. Unsurprisingly this shows that cities tend to have a higher humidity closer to the equator.
           </p>
-          <p>For more indepth analysis and visualisations select the plots for max temp, cloudiness, wind speed or humdiity.</p>
+          
 
         </div>
        
        <br>
       </div>
-      <div class = "col-md-5">
+      <div class = "row">
+        <div class = "col-md-3">
+        </div>
+      <div class = "col-md-4">
         <div class="box main">
           <h1><strong>Visualisations</strong></h1>
           <br>
           <hr>
-          <table>
+          <table> 
             <tr>
               <td>
                 <a href="max_temp.html"><img src="Resources/assets/images/Fig1.png" width=150 height=150 > </a>
               </td>
               <td>
-                <img src="Resources/assets/images/Fig3.png" width=150 height=150> 
+                <a href="cloudiness.html"><img src="Resources/assets/images/Fig3.png" width=150 height=150 > </a>
               </td>
             </tr>
             <tr>
-              <td>
-                <img src="Resources/assets/images/Fig2.png" width=150 height=150> 
+              <td class = primary>
+                <a href="humidity.html"><img src="Resources/assets/images/Fig2.png" width=150 height=150 > </a>
               </td>
               <td>
-                <img src="Resources/assets/images/Fig4.png" width=150 height=150> 
+                <a href="wind_speed.html"><img src="Resources/assets/images/Fig4.png" width=150 height=150 > </a>
               </td>
             </tr>
             <!-- <img src="Resources/assets/images/Fig1.png" width=150 height=150>  

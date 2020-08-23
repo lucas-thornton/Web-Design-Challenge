@@ -3,44 +3,41 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Web Visualisations</title>
-  <link rel="stylesheet" href="reset.css">
+  <title>Data</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
-  <link rel='stylesheet' href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Latitude</a>
+    <a class="navbar-brand" href="index.html">Latitude</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
-        </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Comparison</a>
+          <a class="nav-link" href="comparisons.html">Comparison</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="data.html">Data</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Plots
           </a>
-          <div 
-            <a class=Cloudiness href="#"></a>
-            <a class="Max Temp" href="#"></a>
-            <a class="Humidity" href="#"></a>
-            <a class="Wind Speed" href="#"></a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown"></div> 
+            <a class=Cloudiness href="cloudiness.html"></a>
+            <a class="Max Temp" href="max_temp.html"></a>
+            <a class="Humidity" href="humidity.html"></a>
+            <a class="Wind Speed" href="wind_speed.html"></a>
           </div>
         </li>
       </ul>
     </div>
   </nav>
 
+  <section class=table> 
   <h1>Data</h1>
   <br>
   <p>The following table includes all the data used for plotting the visualisations.</p>
@@ -7175,7 +7172,8 @@
       </tr>
     </tbody>
   </table>
-  
+</section>
+
 </body>
 
 </html>

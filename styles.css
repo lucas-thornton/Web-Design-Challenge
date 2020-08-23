@@ -13,8 +13,8 @@ h1 {
   text-shadow: black 10px;
 }
 
-h3 {
-  font-size: 30px;
+h5 {
+  color: aquamarine;
 }
 
 /* Giving our navbar some padding and a background color */
@@ -46,7 +46,7 @@ h3 {
 
 .navbar-brand {
   background-color: teal;
-  color: #fff;
+  color: white;
 }
 
 .navbar-nav {
@@ -85,10 +85,11 @@ h3 {
 
 .main {
   background-color: white;
-  margin-left: 5%;
+  /* margin-left: 5%;
   margin-right: 5%;
   margin-top: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 5%; */
+  padding: 5%;
 }
 
 .box main {
@@ -97,6 +98,22 @@ h3 {
   margin: 15px;
   font-weight: 800;
   color: #fff;
+
+}
+
+.primary {
+  border: 2px solid #f00;
+  margin: -2px;
+}
+
+.textwrap {
+  float: left;
+  margin: 10px;
+}
+
+.table {
+ padding: 5%;
+ background-color: white;
 
 }
 
