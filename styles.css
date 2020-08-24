@@ -135,6 +135,15 @@ h5 {
 
 }
 
+.sub {
+  display: visible;
+
+}
+
+.sub_min {
+  display: none;
+
+}
 
 
 @media(max-width:650px) {
@@ -175,13 +184,18 @@ visibility: hidden;
 
 }
 
-.box sub {
-  min-height: 50px;
+.sub {
+  /* min-height: 50px;
   padding: 0px 15px;
   margin: 15px;
   font-weight: 800;
-  color: #fff;
+  color: #fff; */
   display: none;
+}
+
+.sub_min {
+  display: block;
+
 }
 
 }
